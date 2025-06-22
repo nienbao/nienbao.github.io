@@ -22,21 +22,23 @@ body {
 }
 
 .container {
-  margin: 20px auto;
-  padding: 20px;
+  margin: 10px auto;
+  padding: 10px;
+  width: 100%;
 }
 
 .hop {
+  display: flex;
   background-color: antiquewhite;
   border-radius: 10px;
-  padding: 10px 50px;
   margin-bottom: 10px;
+  justify-content: center;
 }
 
 .hop pre {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   white-space: pre-wrap;
-  font-size: 20px; /* nếu muốn chỉnh riêng font size */
+  font-size: 16px; /* nếu muốn chỉnh riêng font size */
 }
 
 .canhgiua {
