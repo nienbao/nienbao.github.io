@@ -1,3 +1,8 @@
+/* Reset CSS mặc định và sửa lỗi tràn */
+* {
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
@@ -7,7 +12,7 @@ body {
 /* Thanh bên */
 .sidebar {
   background-color: darkcyan;
-  width: 220px;
+  width: 200px;
   text-align: center;
   margin-bottom: 30px;
   min-height: 100vh;
@@ -25,12 +30,13 @@ body {
 }
 
 .container {
-  margin: 0;
+  margin: 10px auto;
   padding: 10px;
   width: 100%;
 }
 
 .hop {
+  display: inline-block; /* ❗ Quan trọng: chỉ chiếm chỗ theo nội dung */
   display: flex;
   background-color: antiquewhite;
   border-radius: 10px;
