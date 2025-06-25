@@ -1,7 +1,11 @@
 body {
   margin: 0;
-  padding: 50px;
+  padding: 70px;
+  display: flex;
+  justify-content: center;
+  background-color: #e0ffff;
 }
+
 nav {
   padding: 1px 10px;
   display: flex;
@@ -31,13 +35,12 @@ nav a:hover {
 
 .Hopnoidung {
   border-radius: 10px;
-  width: 700px;
-  padding: 0;
-  margin: 50px auto;
-  display: flex;
+  display: inline-flex;
+  padding: 0 50px;
   justify-content: center;
-  padding-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 h1 {
   text-align: center;
 }
@@ -47,7 +50,11 @@ h1 {
 }
 
 .maunen2 {
-  background-color: rgb(204, 245, 229);
+  background-color: #fafad2;
+}
+
+.maunen3 {
+  background-color: #ccffcc;
 }
 
 .Hopnoidung pre {
@@ -58,4 +65,5 @@ h1 {
 #thoigian {
   font-size: 20px;
   font-weight: bold;
+  color: aliceblue;
 }
