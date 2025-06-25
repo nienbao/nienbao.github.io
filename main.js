@@ -11,5 +11,16 @@ function loadPage(file) {
 }
 // ✅ Tải sẵn home.html khi trang vừa mở
 window.addEventListener("DOMContentLoaded", function () {
-  loadPage("chudaibi.html");
+  loadPage("chuduocsu.html");
 });
+
+function capNhatThoiGian() {
+  const ngayGio = new Date();
+  const dinhDang = ngayGio.toLocaleString("vi-VN"); // Định dạng theo tiếng Việt
+
+  document.getElementById("thoigian").innerText = dinhDang;
+}
+
+// Cập nhật mỗi giây
+setInterval(capNhatThoiGian, 1000);
+capNhatThoiGian(); // Gọi lần đầu để hiển thị ngay

@@ -10,22 +10,30 @@
     />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <title>Đây là trang Web cá nhân</title>
+    <title>Web cá nhân</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="sidebar">
-      <h2>Thần chú</h2>
-      <a href="#" onclick="loadPage('chudaibi.html')">Chú Đại Bi</a>
-      <a href="#" onclick="loadPage('chuduocsu.html')">Chú Dược Sư</a>
-      <h2>Thông tin khác</h2>
-      <a
-        href="https://1drv.ms/x/c/2b61d351c9a9b267/EaffJf-8jjtIgD6fozkRVecBuyQkS4lHQDkpO7pcOLusGw?e=37kNyl&nav=MTVfezlBQzY1MEJCLTUzQTEtNDhENC1BNzMzLUVFRkI4RjBEMTNFQ30"
-        >Lịch làm việc Chị 2</a
-      >
-    </div>
+    <nav>
+      <div id="thoigian"></div>
+      <div class="nav-right">
+        <ul>
+          <a href="#" onclick="loadPage('chudaibi.html')">Chú Đại Bi</a>
+          <a href="#" onclick="loadPage('chuduocsu.html')">Chú Dược Sư</a>
+        </ul>
+      </div>
+      <div class="nav-left">
+        <ul>
+          <a href="#" onclick="loadPage('lichchi2.html')"
+            >Lịch làm việc Chị 2</a
+          >
+        </ul>
+      </div>
+    </nav>
 
-    <div class="container" id="main-content"></div>
+    <div id="main-content">
+      <!-- Nội dung của chuduocsu.html sẽ được chèn vào đây -->
+    </div>
 
     <script src="main.js"></script>
   </body>
