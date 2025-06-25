@@ -26,15 +26,32 @@ nav a {
   padding: 12px 10px; /* thêm padding để tạo khối */
   border-radius: 5px; /* bo góc nhẹ */
   transition: background-color 0.3s ease; /* hiệu ứng mượt */
+  width: 100%;
+  box-sizing: border-box; /* đảm bảo không tràn */
 }
 
 nav a:hover {
   background-color: rgb(151, 203, 238);
 }
+/* ✅ Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Dàn theo chiều dọc */
+    align-items: flex-start; /* Căn trái các mục */
+    padding: 10px;
+  }
 
+  nav a {
+    width: 100%; /* Mỗi mục chiếm toàn chiều ngang */
+    padding: 12px;
+    text-align: left; /* Căn chữ về bên trái */
+    box-sizing: border-box;
+  }
+}
 .Hopnoidung {
   border-radius: 10px;
   width: 600px;
+  margin-top: 50px;
   display: inline-flex;
   justify-content: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
