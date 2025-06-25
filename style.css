@@ -12,7 +12,6 @@ nav {
   justify-content: space-between;
   background-color: rgb(5, 151, 170);
   align-items: center; /* ✅ Căn giữa chiều cao */
-
   position: fixed; /* ✅ Cố định thanh navbar */
   top: 0; /* ✅ Dính sát mép trên */
   left: 0;
@@ -35,10 +34,14 @@ nav a:hover {
 
 .Hopnoidung {
   border-radius: 10px;
+  width: 600px;
   display: inline-flex;
-  padding: 0 50px;
   justify-content: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.canhgiua {
+  margin-top: 200px;
 }
 
 h1 {
