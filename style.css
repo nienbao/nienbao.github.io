@@ -1,14 +1,21 @@
 body {
   margin: 0;
+  padding: 50px;
 }
 nav {
   padding: 1px 10px;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(1, 19, 19, 0.062);
+  background-color: rgb(5, 151, 170);
   align-items: center; /* ✅ Căn giữa chiều cao */
-}
 
+  position: fixed; /* ✅ Cố định thanh navbar */
+  top: 0; /* ✅ Dính sát mép trên */
+  left: 0;
+  right: 0;
+  z-index: 1000; /* ✅ Ưu tiên hiển thị trên cùng */
+  /* backdrop-filter: blur(8px); ✅ Làm mờ nền mượt nếu dùng màu trong suốt */
+}
 nav a {
   color: rgb(3, 0, 0);
   text-decoration: none;
@@ -29,6 +36,7 @@ nav a:hover {
   margin: 50px auto;
   display: flex;
   justify-content: center;
+  padding-top: 20px;
 }
 h1 {
   text-align: center;
@@ -49,6 +57,5 @@ h1 {
 }
 #thoigian {
   font-size: 20px;
-  color: #333;
   font-weight: bold;
 }
