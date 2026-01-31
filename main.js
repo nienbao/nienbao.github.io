@@ -11,7 +11,7 @@ function loadPage(file) {
 }
 // ✅ Tải sẵn home.html khi trang vừa mở
 window.addEventListener("DOMContentLoaded", function () {
-  loadPage("chuduocsu.html");
+  loadPage("chudaibi.html");
 });
 
 function capNhatThoiGian() {
